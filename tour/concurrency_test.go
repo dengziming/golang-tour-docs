@@ -138,7 +138,6 @@ func TestWalk(t *testing.T) {
 	for i := range ch {
 		fmt.Println(i)
 	}
-
 }
 
 func Same(t1, t2 *tree.Tree) bool {

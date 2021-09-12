@@ -29,6 +29,18 @@ func TestPointers(t *testing.T) {
 	fmt.Println(j)
 }
 
+func TestRefs(t *testing.T) {
+	// a = Collections.singletonList("a");
+	// b = a;
+	// b = Collections.singletonList("b");
+	// System.out.println(b);
+	a := []string{"a"}
+	b := &a
+	*b = []string{"b"}
+	fmt.Println(a)
+	fmt.Println(*b)
+}
+
 type Vertex struct {
 	X int
 	Y int

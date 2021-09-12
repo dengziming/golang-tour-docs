@@ -89,7 +89,7 @@ func TestSwitch(t *testing.T) {
 	}
 }
 
-func TestSiwtchEvaluationOrder(t *testing.T) {
+func TestSwitchEvaluationOrder(t *testing.T) {
 	fmt.Println("When's Saturday")
 	today := time.Now().Weekday()
 
