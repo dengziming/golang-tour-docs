@@ -22,3 +22,16 @@ func printlnListNode(node *ListNode) {
 	fmt.Print(node.Val)
 	fmt.Print(" ")
 }
+
+func printlnArray(data [][]int){
+	if len(data) == 0 {
+		println("nil")
+	}
+	for _, ele := range data {
+		for _, d := range ele {
+			print(d)
+			print(" ")
+		}
+		println()
+	}
+}
