@@ -42,3 +42,18 @@ func printlnArray(data [][]int){
 		println()
 	}
 }
+
+func min(a int, b int) int {
+	if a >= b {
+		return b
+	} else {
+		return a
+	}
+}
+
+func max(a int, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}

@@ -52,11 +52,3 @@ func (tuple *TwoSortedArray) findK(start1 int, start2 int, k int) int {
 		return tuple.findK(start1, newStart2, k - (newStart2 - start2))
 	}
 }
-
-func min(a int, b int) int {
-	if a >= b {
-		return b
-	} else {
-		return a
-	}
-}
