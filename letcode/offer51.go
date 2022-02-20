@@ -9,7 +9,7 @@ func reversePairs(nums []int) int {
 		}
 		mid := (left + right) / 2
 		// 经过这里能保证两段都已经排好序了
-		cnt := mergeSort(left, mid) + mergeSort( mid + 1, right)
+		cnt := mergeSort(left, mid) + mergeSort(mid + 1, right)
 
 		i := left
 		j := mid + 1
