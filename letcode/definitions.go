@@ -13,6 +13,13 @@ type ListNode struct {
       Right *TreeNode
   }
 
+  type Node struct {
+      Val int
+      Left *Node
+      Right *Node
+      Next *Node
+  }
+
 
 func createListNode(nodes []int) *ListNode {
 	if len(nodes) == 1 {
