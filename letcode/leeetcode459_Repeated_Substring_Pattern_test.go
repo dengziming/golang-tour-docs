@@ -10,4 +10,7 @@ func TestKmp(t *testing.T) {
 	if kmp("abcabc", "abcabdc") {
 		t.Error("测试失败")
 	}
+	if kmp("ababc", "ababcabaa") {
+		t.Error("测试失败")
+	}
 }
