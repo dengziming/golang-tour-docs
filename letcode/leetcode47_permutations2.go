@@ -21,7 +21,6 @@ func permuteUnique(nums []int) [][]int {
 	var dfs func(set map[int]bool, target []int, result *[][]int)
 	dfs = func(set map[int]bool, target []int, result *[][]int) {
 		if len(target) == len(nums) {
-			// TODO 这个的目的是啥，为啥 *result = append(*result, target) 就会指针错乱
 			*result = append(*result, append([]int(nil), target...))
 			return
 		}
