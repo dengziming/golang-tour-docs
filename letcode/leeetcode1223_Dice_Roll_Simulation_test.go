@@ -17,6 +17,4 @@ func TestDieSimulator(t *testing.T) {
 		println(dieSimulator(100, []int{8,11,13,9,10,7}))
 		t.Error("测试失败")
 	}
-
-
 }
